@@ -1,26 +1,33 @@
-.parent-container{
+#parent-container{
     background-color: white;
 }
 
-.grid-container{
-    display:grid;
-    grid-template-columns: row;
+#main-container{
      background-color: lightgrey;
      padding:10px;
-     justify-content: center;
 }
 
 .header{ text-align: center;
 }
+#image{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
 
-#img-div{ text-align: center;
+#img-div{ 
+border-radius: 10px;
+text-align: center;
 background-color: white;
-padding:20px 40px 20px 40px;
+padding:20px;
 }
 
 .headline{text-align: center;}
 
-.tribute{text-align: center;}
+ul li{
+width: 50%;
+margin: 0 auto;
+}
 .quote{ text-align: center;}
 
 .footer{text-align: center;}
