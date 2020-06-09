@@ -6,6 +6,91 @@
     <title>Survey Form</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1 id='title'> Talia's Bakery Survey Form</h1>
+            <p id='description'>Thank you for taking the time to help us improve our bakery</p>
+        </header>
+        <form id='survey-form'>
+            <div class="formsection">
+                <label id='name-label' for='name'>Name</label>
+                <input type='text'id='name' name='name' placeholder="Enter Your Name">
+            </div>
+
+            <div><label for='email' id='email-label'>Email</label>
+                <input type='email' id='email' name='email'placeholder='Enter Your Email' required>
+            </div>
+                
+            <div><label for='number' id='number-label'>Age (optional)</label>
+                <input type='number' id='number' name='number' min='15' max='60' placeholder="Age" required >
+          </div>
+
+            <div><p>What time of the day do you visit the bakery?</p>
+                    <select id='dropdown' name='time'>
+                        <option value=''disabled='' selected=''>Select time</option>
+                        <option value='morning'>Morning</option>
+                        <option value='afternoon'>Afternoon</option>
+                        <option value='evening'>Evening</option>
+                    </select>
+                </div>
+                
+             <div>
+                    <p>Would you recommend Talia's bakery to a friend?</p>
+                    <input type='radio' name='recommendations' value='definitely' id='positive'>
+                    <label for='positive'>Definitely</label>
+                    <br>
+                   <input type='radio' name="recommendations" value='maybe' id='unsure'>
+                   <label for='unsure'>Maybe</label>
+                   <br>
+                   <input type='radio' name='recommendations' value='not sure'id='negative'>
+                   <label for='negative'>Not Sure</label>
+             </div>
+
+            <div>
+             <p>What items should we add onto the menu? <em>(select all that apply)</em></p>
+                <input type="checkbox" name='item1'value='red velvet cupcakes'id='cupcakes'>
+                <label for='cupcakes'>Red Velvet Cupcakes</label>
+                <br>
+                 <input type='checkbox' name='item2' value='lava cake' id='lavcake'>
+                <label for='lavcake'> Lava Cake</label>
+                 <br>
+                <input type="checkbox" name='item3' value='Strawberry Cream Souffle' id='Souffle'>
+                <label for='Souffle'>Strawberry Cream Souffle</label>
+                <br>
+                <input type="checkbox" name="item4" value='Raspberry Cheescake Macarons'id='Macarons'>
+                <label for='Macarons'>Raspberry Cheescake Macarons</label>
+                <br>
+                <input type="checkbox" name="item5" value='Double Chocolate Mousse Tart' id='Tart'>
+                <label for='Tart'>Double Chocolate Mousse Tart</label>
+                <br>
+                <input type="checkbox" name="item6" value="Vegan Brownies" id='Brownies'>
+                <label for='Brownies'>Vegan Brownies</label>
+                <br>
+                <input type="checkbox" name="item7" value="Peanut Butter Stuffed Brownie Truffles" id='Truffles'>
+                <label for='Truffles'>Peanut Butter Stuffed Brownie Truffles</label>
+                <br>
+                <input type="checkbox" name='item8' value='Basic Pecan Pie' id='Pecan'>
+                <label for='Pecan'>Basic Pecan Pie</label>
+                <br>
+                <input type="checkbox" name="item9" value='Pain Au Chocolat'id='pain'>
+                <label for='pain'>Pain Au Chocolat</label>
+                    
+                </div>
+                <div>
+                    <p>Any comments or suggestions?</p>
+                    <textarea name='comment'placeholder='Enter comment here'></textarea>
+            
+             </div>
+             <div>
+                 <button type='Submit'id='Submit' >
+                     Submit
+                 </button>
+             </div>
+
+            
+
+        </form>
+     
+    </div>
 </body>
 </html>
